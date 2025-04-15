@@ -1,55 +1,14 @@
 export default function NotePad() {
   return (
-    <div style={{ fontFamily: "JetBrainsMono-Regular, monospace" }}>
-      <div
-        style={{
-          height: "100vh",
-          width: "100%",
-          backgroundColor: "#E8C999",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            width: "100%",
-            height: "100%",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ color: "red", fontSize: "24px" }}>
-            This text should be red and 24px
-          </div>
-          <textarea
-            style={{
-              width: "50%",
-              height: "100px",
-              padding: "1rem",
-              outline: "none",
-              borderBottom: "1px solid black",
-              borderRadius: "0.5rem",
-              color: "black",
-              fontSize: "24px",
-              fontFamily: "JetBrainsMono-Regular, monospace",
-            }}
-            placeholder="your note..."
-          />
-          <button
-            style={{
-              marginTop: "1rem",
-              padding: "0.5rem 1rem",
-              backgroundColor: "red",
-              border: "1px solid black",
-              borderRadius: "0.25rem",
-            }}
-          >
-            Save Note
-          </button>
-        </div>
+    <div className="h-screen w-full bg-[#E8C999] flex items-center justify-center">
+      <div className="flex flex-col w-full h-full justify-center items-center">
+        <textarea
+          className="w-[60%] h-[100px] p-4 border-b border-black focus:outline-none bg-transparent rounded-lg text-black text-2xl font-mono placeholder:text-black/40"
+          placeholder="your note..."
+        />
+        <button className="mt-4 px-4 py-2 border border-black rounded hover:bg-red-500 hover:text-white transition-all duration-100 active:scale-95 active:translate-y-0.1">
+          Save Note
+        </button>
       </div>
     </div>
   );

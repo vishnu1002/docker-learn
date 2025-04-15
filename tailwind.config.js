@@ -2,14 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        jetbrains: ["JetBrainsMono-Regular", "monospace"],
-      },
-    },
+    extend: {},
   },
   plugins: [],
-  corePlugins: {
-    preflight: true,
-  },
 };
