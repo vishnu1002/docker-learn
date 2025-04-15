@@ -3,14 +3,22 @@
 
 @font-face {
   font-family: "JetBrainsMono-Regular";
-  src: url("/src/assets/fonts/JetBrainsMono-Regular.ttf") format("truetype");
-  font-weight: 400;
+  src: url("./assets/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-@layer base {
-  html {
-    font-family: "JetBrainsMono-Regular", monospace;
-  }
+html {
+  font-family: "JetBrainsMono-Regular", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some basic styles to test if CSS is working */
+.test-style {
+  color: red;
+  font-size: 24px;
 }
